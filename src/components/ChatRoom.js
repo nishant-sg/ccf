@@ -20,7 +20,7 @@ const socket = getSocket();
 //     });
 //   }
 // });
-
+ 
 const ChatRoom = ({ token, user }) => {
   const [isActive, setActive] = useState(false);
   const [clickedRoomName, setClickedRoomName] = useState("");
@@ -93,7 +93,7 @@ const ChatRoom = ({ token, user }) => {
       },
       {
         headers: {
-          Authorization: token ? `Bearer ${token}` : "",
+          Authorization: token,
           "Content-type": "application/json",
         },
       }

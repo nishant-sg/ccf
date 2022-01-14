@@ -9,7 +9,7 @@ const Chat = () => {
   const user = JSON.parse(localStorage.getItem("user"));
   //const history = useHistory();
 
-  if (token.length === 0) {
+  if (token===null) {
     history.push("/");
   }
 

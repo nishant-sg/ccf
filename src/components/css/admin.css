@@ -1,0 +1,43 @@
+.admin{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height:70vh;
+    width:100%;
+  }
+  
+  .admin-left{
+    background-color: blue;
+    height:100%;
+    width:20%;
+  }
+  .admin-right{
+    background-color: green;
+    height:100%;
+    width:80%;
+  }
+
+  .button-arrange{
+    background-color:red;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .backdrop{
+    background-color:green;
+  }
+
+  .reader{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .label{
+    width: 30%;
+  }
+
+  .input{
+    width: 70%;
+  }

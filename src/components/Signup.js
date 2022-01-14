@@ -7,7 +7,7 @@ import Logo from "./images/robo.webp";
 import { Link } from "react-router-dom";
 import Tilt from "react-tilt";
 import { useHistory } from "react-router";
-import axios from "axios";
+import axios from "axios"; 
 import config from "../config.json";
 // import M from "materialize-css";
 
@@ -61,8 +61,8 @@ const Signup = () => {
         //   "5ffc31195bfdb84beba3ffaa",
         // ];
         const roomIds = [
-          "601bb51e6e69aa784e27ce6c",
-          "601bb5266e69aa784e27ce6d",
+          "60e9373ace5ecd0015a74b07",
+          "60e93b17ce5ecd0015a74b1e",
         ];
         roomIds.map(async (roomId) => {
           const _res = await axios.post(`${config.server}/joinroom/`, {

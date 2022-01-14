@@ -24,12 +24,15 @@ const Login = () => {
         email,
         password,
       });
-      if (res.status === 200) {
+      if (res.status === 200) { 
         const { token, user } = res.data;
-        console.log("Successfully Signed in");
+        console.log("Successfully Signed in",res.data.user.role);
         localStorage.setItem("token", token);
         localStorage.setItem("user", JSON.stringify(user));
-        history.push("/chat");
+        if (res.data.user.role === "admin") {
+          history.push("/admin")
+        }else{
+        history.push("/chat");}
       } else {
         console.log(res);
       }

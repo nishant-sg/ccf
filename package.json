@@ -20,7 +20,7 @@
     "react-multi-select-component": "^3.0.8",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^3.0.1",
     "react-spinners": "^0.10.4",
     "react-tilt": "^0.1.4",
     "reactstrap": "^8.8.0",
@@ -28,7 +28,7 @@
     "socket.io-client": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
